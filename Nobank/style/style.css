@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+/* CONFIG LOGO */
+.logo {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(128, 128, 128, 0.377);
+}
+
+
+/* CONFIG NAVIGATION */
+.navbar > ul {
+    display: flex;
+    gap: 150px;
+    list-style: none;
+}
+
+.navbar > ul > li > a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar > ul > li > a:hover {
+    border-bottom: 4px solid black ;
+}
+
+/* CONFIG BUTTON ENTER */
+.btn-enter {
+    background-color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn-enter:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-enter > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* CONFIG MAIN */
+/* CONFIG CONTENT LEFT */
+.content-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10%;
+} 
+
+.content-left > *{
+    margin: 20px 0;
+}
+
+.content-left > h1 {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.content-left > p {
+    font-size: 30px;
+    width: 70%;
+    color: #777;
+}
+
+.content-left > img {
+    width: 30%;
+    cursor: pointer;
+}
+
+.content-right > img {
+    width: 90%;
+}
+
+/* CONFIG CONTENT BOTTON */
+.content-botton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+i {
+    margin: 0 10px;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.content-botton_right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    background-color: #dddddd1e;
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.content-botton_right_text {
+    width: 10em;
+}
+
+.content-botton_right_text > span {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.7);
+}
+
+.content-botton_right_text > p {
+    font-weight: 500;
+}
+
+.circle {
+    background: linear-gradient(to bottom, #a708a7, #e2dddd ) ;
+    width: 15%;
+    padding: 20px;
+    border-radius: 100px;
+}
