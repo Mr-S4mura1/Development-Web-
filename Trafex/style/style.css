@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+.section-top {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 4px;
+}
+
+.section-top > button {
+    background: none;
+    border: none;
+
+    border: 1px solid gray;
+    padding: 5px 7px;
+    border-radius: 100px;
+}
+
+.section-top > button > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.navbar > img {
+    width: 4%;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    list-style: none;
+}
+
+.navbar-menu > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-menu > li > a:hover {
+    border-bottom: 4px solid black;
+    padding: 20px 0;
+}
+
+/* Styles buttons */
+
+button {
+    padding: 15px 15px;
+    font-weight: bold;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button > a {
+    text-decoration: none;
+}
+
+.button-style_one > a {
+    color: black;
+}
+
+.button-style_two {
+    background-color: black;
+    border: none;
+}
+
+.button-style_two > a {
+    color: white;
+}
+
+.button-style_three {
+    background-color: rgb(119, 119, 119, 0.3);
+    border: none;
+}
+
+.button-style_three > a {
+    color: #000;
+}
+
+
+.section-mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 120px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 50px;
+}
+
+.section-mid_buttons {
+    width: 25%;
+    font-size: 20px;
+}
+
+.section-mid_buttons > button {
+    width: 40%;
+    margin: 20px 0;
+}
+
+
+.section-botton  {
+    width: 90%;
+    height: 30em;
+    margin: 0 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
