@@ -1,0 +1,173 @@
+/* -------------------------------------------------------------------------- */
+/*                                Content Left                                */
+/* -------------------------------------------------------------------------- */
+
+.content-left {
+    background-color: var(--azul);
+    color: white;
+    padding: 2em;
+}
+
+.content-left > span {
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.content-left_text {
+    margin: 2em 0;
+}
+
+.content-left_text > p {
+    margin-top: 1em;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Content Right                               */
+/* -------------------------------------------------------------------------- */
+.content-right {
+    padding: 1.2em;
+    text-align: center;
+}
+
+.content-right > i {
+    display: none;
+}
+
+.content-right > h2 {
+    margin: 1em 0;
+    color: var(--azul);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form > label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 1.5em;
+    color: gray;
+}
+
+input {
+    border: none;
+    border: 1px solid var(--azul);
+    border-radius: 0.5em;
+    padding: 1em  0em 1em 1em;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    padding: 1em 0 1em 0;
+    margin: 1em 0;
+    font-weight: bold;
+    color: white;
+    background-color: var(--azul);
+}
+
+.content-right_bottom > p{
+    font-size: 0.8em;
+}
+
+.content-right_bottom > p > span {
+    font-weight: bold;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Responsive                                 */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* -------------------------------------------------------------------------- */
+
+    .content-left {
+        width: 40%;
+    }
+
+    .content-left > span {
+        font-size: 2em;
+        margin: 0 1em;
+    }
+
+    .content-left_text {
+        margin: 8em 2em;
+    }
+
+    .content-left_text > h1{
+        width: 80%;
+    }
+
+    .content-left_text > p {
+        width: 50%;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    .content-right {
+        width: 60%;
+        padding: 4em 12em;
+        text-align: left;
+    }
+
+    .content-right > h2 {
+        font-size: 2em;
+        width: 50%;
+    }
+    
+    input {
+        padding: 1.5em 0 1.5em 1.5em;
+    }
+
+    .content-right > h2 {
+        margin: 0em 0;
+    }
+
+    input[type=submit] {
+    font-size: 1em;
+    }
+
+    input:focus {
+        border-color: var(--azul);
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 900px) {
+    /* Aquí van los estilos específicos para tabletas */
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .content-left, .content-right {
+        width: 100%; /* Ambos ocupan el 100% del ancho */
+        flex: 1 1 auto; /* Permite que se adapten automáticamente al espacio */
+        margin: 0; /* Eliminamos cualquier margen lateral que cause desplazamiento */
+        padding: 1em; /* Aseguramos un espaciado interno consistente */
+        box-sizing: border-box; /* Considera bordes y padding dentro del ancho total */
+    }
+
+
+    .content-right {
+        padding: 0 8em;
+    }
+
+    .content-right > h2 {
+        margin: 1em 0;
+        color: var(--azul);
+    }
+}
