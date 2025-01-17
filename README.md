@@ -6,3 +6,5 @@
 ![image](https://github.com/user-attachments/assets/7ddbcfbd-ee7a-4cf5-a787-892487f41ca2)
 4. **Bugcode** - Responsive
 ![image](https://github.com/user-attachments/assets/07266e84-1bab-4f4e-af20-75c8b0f00010)
+5. **WebSite Section** - Responsive
+![image](https://github.com/user-attachments/assets/32791952-bb90-42d0-b415-15688a0b9ee1)
